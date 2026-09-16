@@ -1,0 +1,13 @@
+# Retail Sales Pig Processing
+
+# Start Pig in local mode
+pig -x local
+
+# Cleaned retail sales data was stored locally at:
+/home/hdp/retailsales_clean_final
+
+# The cleaned data was then uploaded to HDFS:
+hadoop fs -put /home/hdp/retailsales_clean_final /retailsales_clean_final
+
+# Verify the HDFS output:
+hadoop fs -ls /retailsales_clean_final

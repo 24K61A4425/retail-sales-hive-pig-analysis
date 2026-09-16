@@ -1,0 +1,7 @@
+hdfs put /home/hdp/Downloads/retail_sales_50kb.csv /retailsales/
+
+hdfs ls -lh /retailsales
+
+hadoop fs -put /home/hdp/retailsales_clean_final /retailsales_clean_final
+
+hadoop fs -ls /retailsales_clean_final
